@@ -34,6 +34,7 @@ class BottomNavigation extends StatelessWidget {
               child: Icon(FontAwesomeIcons.phoneAlt, size: 20),
             ),
           ],
+          indicatorColor: Colors.transparent,
           controller: _tabController,
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone_ui/components/conversation_screen_ui.dart';
 import 'package:whatsapp_clone_ui/constants.dart';
 import 'package:whatsapp_clone_ui/model/chatModel.dart';
 
@@ -22,6 +23,19 @@ class ChatScreenUI extends StatelessWidget {
             itemBuilder: (context, i) => Column(
               children: [
                 ListTile(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ConversationScreen(
+                          profilePic: dummyData[i].avatarUrl,
+                          username: dummyData[i].name,
+                          online: dummyData[i].online,
+                          time: dummyData[i].time,
+                        ),
+                      ),
+                    );
+                  },
                   leading: CircleAvatar(
                     backgroundImage: NetworkImage(
                       dummyData[i].avatarUrl,
