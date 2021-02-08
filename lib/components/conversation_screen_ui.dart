@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone_ui/components/bottom_send_navigation.dart';
-import 'package:whatsapp_clone_ui/components/messageBox.dart';
 import 'package:whatsapp_clone_ui/constants.dart';
-import 'package:whatsapp_clone_ui/model/messageModel.dart';
 
 class ConversationScreen extends StatelessWidget {
   final String username, profilePic, time;
@@ -113,22 +111,7 @@ class ConversationScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
-        decoration: BoxDecoration(color: Colors.white),
-        child: ListView(
-          padding: EdgeInsets.all(20),
-          children: List.generate(
-            messages.length,
-            (index) {
-              return MessageBox(
-                isMe: messages[index]['isMe'],
-                message: messages[index]['message'],
-              );
-            },
-          ),
-        ),
-      ),
-      bottomSheet: BottomSendNavigation(),
+      body: BottomSendNavigation(),
     );
   }
 }
