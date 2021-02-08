@@ -1,7 +1,7 @@
 import 'package:emoji_picker/emoji_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:whatsapp_clone_ui/components/messageBox.dart';
+import 'package:whatsapp_clone_ui/components/chat_components/components/messageBox.dart';
 import 'package:whatsapp_clone_ui/constants.dart';
 import 'package:whatsapp_clone_ui/model/messageModel.dart';
 

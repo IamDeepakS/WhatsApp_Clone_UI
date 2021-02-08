@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone_ui/components/conversation_screen_ui.dart';
+import 'package:whatsapp_clone_ui/components/chat_components/conversation_screen_ui.dart';
 import 'package:whatsapp_clone_ui/constants.dart';
 import 'package:whatsapp_clone_ui/model/chatModel.dart';
 

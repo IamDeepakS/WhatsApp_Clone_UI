@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone_ui/components/bottom_navigation.dart';
-import 'package:whatsapp_clone_ui/components/chat_screen_ui.dart';
-import 'package:whatsapp_clone_ui/components/story_screen_ui.dart';
+import 'package:whatsapp_clone_ui/components/home_components/chat_screen_ui.dart';
+import 'package:whatsapp_clone_ui/components/home_components/components/bottom_navigation.dart';
+import 'package:whatsapp_clone_ui/components/home_components/components/story_screen_ui.dart';
 import 'package:whatsapp_clone_ui/constants.dart';
 
 class WhatsappHome extends StatefulWidget {

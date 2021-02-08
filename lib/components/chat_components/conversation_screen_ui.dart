@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone_ui/components/bottom_send_navigation.dart';
+import 'package:whatsapp_clone_ui/components/chat_components/components/bottom_send_navigation.dart';
 import 'package:whatsapp_clone_ui/constants.dart';
 
 class ConversationScreen extends StatelessWidget {
